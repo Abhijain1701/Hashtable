@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sketch</title>
+    <style>
+      /* Styling for buttons */
+      .button {
+        background-color: #4caf50; /* Green background */
+        border: none;
+        color: white; /* White text */
+        padding: 6px 12px; /* Padding */
+        text-align: center; /* Center text */
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px; /* Font size */
+        margin: 10px 5px; /* Margin */
+        cursor: pointer; /* Cursor on hover */
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s ease; /* Smooth transition */
+      }
+
+      .card {
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8); /* Black shadow */
+        transition: 0.3s; /* Smooth transition for the shadow */
+        padding: 20px; /* Padding inside the card */
+        border-radius: 10px; /* Rounded corners */
+        margin: 20px; /* Margin around the card */
+      }
+
+      /* Hover effect */
+      .button:hover {
+        background-color: #45a049; /* Darker green on hover */
+      }
+
+      /* Disabled state */
+      .button:disabled {
+        background-color: #cccccc; /* Gray for disabled */
+        cursor: not-allowed; /* No cursor for disabled */
+      }
+
+      /* Container for algorithm box */
+      #algorithm-box {
+        display: none;
+        white-space: pre;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        border-radius: 10px;
+        height: 200px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 10px;
+        overflow-y: auto;
+      }
+
+      /* Highlight for algorithm box */
+      .highlight {
+        background-color: #ffff99;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+
+    <!-- Buttons -->
+
+    <!-- Algorithm Box -->
+    <div id="algorithm-box"></div>
+  </body>
+</html>
